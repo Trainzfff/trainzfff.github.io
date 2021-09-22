@@ -7,16 +7,24 @@ var numKids  = 3;
 var partner  = ["David Beckham"];
 var geoLocation = ["Costa Rica"];
 var jobTitle = ["web developer"];
+		
+tellFortune('bball player', 'spain', 'Shaq', 3);
+tellFortune('stunt double', 'Japan', 'Ryan Gosling', 3000);
+tellFortune('Elvis impersonator', 'Russia', 'The Oatmeal', 0);
 	</script>
 </head>
 <body>
-	<h1>The Fortune Teller</h1>
+	<h1>part 1</h1>
 	<script>
 document.write("<p>You will be a " + jobTitle + " in " + geoLocation + ", and married to " +
    partner + " " + " with " + numKids + " kids.</p>");
 
-		
-
+	<h1>part 2</h1>
+function tellFortune(jobTitle, geoLocation, partner, numKids) {
+    var future = 'You will be a ' + jobTitle + ' in ' + geoLocation + ' and married to ' +
+   partner + ' ' + ' with ' + numKids + ' kids.';
+    console.log(future);
+}
 	</script>
 </body>
 </html>

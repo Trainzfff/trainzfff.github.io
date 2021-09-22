@@ -3,31 +3,24 @@
 <head>
 	<title>The Fortune Teller</title>
 	<script>
-var numKids  = 3;
-var partner  = ["David Beckham"];
-var geoLocation = ["Costa Rica"];
-var jobTitle = ["web developer"];
-
 		
 var numChild = [1, 2, 3];
-var LoverNam = ["Carlos", "Jason", "Tom"];
-var GeoLocal = ["France", "United Kingdom", "America"];
-var JobNam = ["Musician", "Cook", "Painter"];
+var loverNam = ["Carlos", "Jason", "Tom"];
+var geoLocal = ["France", "United Kingdom", "America"];
+var jobNam = ["musician", "cook", "painter"];
 
 function flipCoin(max) {
-	return Math.floor(Math.random() * Math(floor(max))
+	return Math.floor(Math.random() * Math.floor(max))
 		}
 	</script>
 </head>
 <body>
 	<h1>The Fortune Teller</h1>
 	<script>
-document.write("<p>You will be a " + jobTitle + " in " + geoLocation + ", and married to " +
-   partner + " " + " with " + numKids + " kids.</p>");
 
 fortune = flipCoin(3) + 1;
-document.write("<p>You will be a " + jobTitle + " in " + GeoLocal + ", and married to " +
-   LoverNam + " " + " with " + numChild + " kids.</p>");
+document.writeln("<p>You will be a " + jobNam[fortune] + " in " + geoLocal[fortune] + ", and married to " +
+   loverNam[fortune] + " " + " with " + numChild[fortune] + " kids.</p>");
 
 	</script>
 </body>

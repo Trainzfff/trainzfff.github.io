@@ -3,16 +3,18 @@
 <head>
 	<title>The Fortune Teller</title>
 	<script>
-   var Partner  = "Michael Jackson";
-   var JobTitle = "Musician";
-   var NumKids  = 4;
-   var Geog = "America";
+tellFortune('bball player', 'spain', 'Shaq', 3);
+tellFortune('stunt double', 'Japan', 'Ryan Gosling', 3000);
+tellFortune('Elvis impersonator', 'Russia', 'The Oatmeal', 0);
 	</script>
 </head>
 <body>
 	<script>
-   tellFortune("You will be a " + JobTitle + " in " + Geog + ", and married to " +
-   Partner + " " + " with " + NumKids + " kids.");
+function tellFortune(jobTitle, geoLocation, partner, numKids) {
+    var future = 'You will be a ' + jobTitle + ' in ' + geoLocation + ' and married to ' +
+   partner + ' ' + ' with ' + numKids + ' kids.';
+    console.log(future);
+}
 	</script>
 </body>
 </html>

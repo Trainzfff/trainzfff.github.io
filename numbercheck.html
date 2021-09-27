@@ -12,17 +12,24 @@
     {
       var num = document.getElementById("theNumber").value;
       var msg = "";
-
-      if ((num >= 100))
-
-        msg = msg + "The number is less than 100 ";
-
-              else if ((num >= 100))
-        msg = msg + "The number is greater than or equal to ";      
-
-      alert(msg);
-    }
-
+      
+      if (num >= 100)
+   {
+    msg = msg + "The number is greater than ";
+    msg = msg + "or equal to 100.";
+     alert (msg);
+     }
+     else
+     { 
+     if (num < 100)
+     {
+     msg = msg + "The number is less than ";
+     msg = msg + "100.";
+     
+     alert(msg);
+     }
+   }
+ }
     /* ]]> */
 
   </script>

@@ -6,20 +6,25 @@
   <meta charset="UTF-8">
   <title>Number Check</title>
   <script type="text/javascript">
+
     /* <![CDATA[ */
     function checkTheNumber()
-    { 
+    {
       var num = document.getElementById("theNumber").value;
       var msg = "";
 
       if ((num >= 100))
+
         msg = msg + "The number is less than 100 ";
 
-		else if ((num >= 100))
-        msg = msg + "The number is greaters or equal to 100.";      
+              else if ((num >= 100))
+        msg = msg + "The number is greater than or equal to ";      
+
       alert(msg);
     }
+
     /* ]]> */
+
   </script>
 </head>
 

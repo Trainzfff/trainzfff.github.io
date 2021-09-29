@@ -12,12 +12,12 @@
     {
       var num = document.getElementById("theNumber").value;
       var msg = "";
-      
+
       if (num >= 100)
 
-        msg = msg + "The number is greater than 100";
-	else 
-        msg = msg + "The number is less than 100";      
+        msg = msg + "The number is equal to or greater than 100";
+	else
+        msg = msg + "The number is less than 100.";      
 
       alert(msg);
     }
@@ -31,7 +31,7 @@
 
 <h3>Number Checker</h3>
 
-<form action="NumberCheck.html" method="post" name="theForm"
+<form action="numbercheck.html" method="post" name="theForm"
       onsubmit="checkTheNumber(); return false;">
   Enter a number: <input type="text" name="theNumber" id="theNumber" />
 
